@@ -11,6 +11,11 @@ const structuredData = {
   url: siteConfig.url,
   description: siteConfig.description,
   email: siteConfig.contactEmail,
+  founder: {
+    "@type": "Person",
+    name: "Fei Shan",
+    url: "https://www.linkedin.com/in/shannon-sf",
+  },
   parentOrganization: {
     "@type": "Organization",
     name: "AlphaStack LLC",
