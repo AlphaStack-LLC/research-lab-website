@@ -86,10 +86,22 @@ export default function TermsPage() {
       </section>
 
       <section>
+        <h2>Changes to these terms</h2>
+        <p>
+          We may update these terms from time to time. The &ldquo;Last
+          updated&rdquo; date above reflects the current version; continued
+          use of the Site after an update constitutes acceptance of the
+          revised terms.
+        </p>
+      </section>
+
+      <section>
         <h2>Governing law and contact</h2>
         <p>
           These terms are governed by the laws of the State of California,
-          without regard to conflict-of-law rules. Questions:{" "}
+          without regard to conflict-of-law rules, and any dispute will be
+          brought in the state or federal courts located in California.
+          Questions:{" "}
           <a href={`mailto:${siteConfig.contactEmail}`}>
             {siteConfig.contactEmail}
           </a>

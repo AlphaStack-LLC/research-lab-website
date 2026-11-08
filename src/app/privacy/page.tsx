@@ -54,8 +54,29 @@ export default function PrivacyPage() {
           </a>
           , we receive and retain the information you send (your email
           address, name if provided, and message content) to respond to your
-          inquiry and manage the resulting business relationship. We do not
-          sell or share this information with third parties for marketing.
+          inquiry and manage the resulting business relationship. We retain
+          correspondence only as long as needed for these purposes, after
+          which it is deleted. We do not sell or share this information with
+          third parties for marketing.
+        </p>
+      </section>
+
+      <section>
+        <h2>Where data is processed</h2>
+        <p>
+          This site is hosted on Amazon Web Services infrastructure in the
+          United States. If you access the site from outside the United
+          States, you understand that any information you provide (such as
+          by emailing us) will be processed in the United States.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          This site is directed at business and research audiences and is
+          not intended for children under 13. We do not knowingly collect
+          personal information from children.
         </p>
       </section>
 
