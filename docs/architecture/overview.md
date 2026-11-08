@@ -57,6 +57,9 @@ file requires a rebuild and redeploy — there is no runtime content store.
 | `/publications/`    | `src/app/publications/page.tsx`          |
 | `/team/`            | `src/app/team/page.tsx`                  |
 | `/collaborate/`     | `src/app/collaborate/page.tsx`           |
+| `/privacy/`         | `src/app/privacy/page.tsx`               |
+| `/terms/`           | `src/app/terms/page.tsx`                 |
+| `/cookies/`         | `src/app/cookies/page.tsx`               |
 | `sitemap.xml`       | `src/app/sitemap.ts` (`force-static`)    |
 | `robots.txt`        | `src/app/robots.ts` (`force-static`)     |
 

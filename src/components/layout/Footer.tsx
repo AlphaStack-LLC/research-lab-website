@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-ink-700/50 bg-ink-900/40">
       <Container className="py-12">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="text-sm font-semibold text-paper-50">
               {siteConfig.name}
@@ -43,18 +43,32 @@ export function Footer() {
                   {siteConfig.contactEmail}
                 </a>
               </li>
+              <li>
+                <a
+                  href={siteConfig.corporateSite}
+                  className="text-sm text-paper-300 hover:text-accent-300"
+                >
+                  AlphaStack LLC
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <nav aria-label="Legal">
+            <p className="text-sm font-semibold text-paper-50">Legal</p>
+            <ul className="mt-3 space-y-2">
               {siteConfig.legalLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-paper-300 hover:text-accent-300"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
         <p className="mt-10 border-t border-ink-700/50 pt-6 text-xs text-paper-400">

@@ -8,8 +8,9 @@ export const siteConfig = {
   contactEmail: "info@alpha-stack.ai",
   corporateSite: "https://alpha-stack.ai",
   legalLinks: [
-    { label: "Privacy Policy", href: "https://alpha-stack.ai/privacy/" },
-    { label: "Terms", href: "https://alpha-stack.ai/legal/" },
+    { label: "Privacy Policy", href: "/privacy/" },
+    { label: "Terms of Use", href: "/terms/" },
+    { label: "Cookie Policy", href: "/cookies/" },
   ],
   footerStatement:
     "AlphaStack Research Lab is an internal research division of AlphaStack LLC, a California limited liability company.",
