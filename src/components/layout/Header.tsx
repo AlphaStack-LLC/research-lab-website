@@ -22,12 +22,14 @@ export function Header() {
           className="flex items-center gap-2 text-paper-50"
           onClick={() => setMenuOpen(false)}
         >
-          <span
-            aria-hidden="true"
-            className="flex h-7 w-7 items-center justify-center rounded-md bg-accent-500 text-sm font-bold text-ink-950"
-          >
-            A
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element -- static export serves assets unoptimized */}
+          <img
+            src="/images/alphastack_logo.png"
+            alt=""
+            width={382}
+            height={288}
+            className="h-8 w-auto"
+          />
           <span className="text-sm font-semibold tracking-wide">
             {siteConfig.name}
           </span>

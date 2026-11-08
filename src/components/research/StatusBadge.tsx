@@ -3,10 +3,10 @@ import type { ProjectStatus } from "@/lib/content/types";
 
 const STATUS_STYLES: Record<ProjectStatus, string> = {
   Proposed: "border-paper-400/40 text-paper-300",
-  Planning: "border-amber-400/50 text-amber-300",
-  "In Progress": "border-accent-400/60 text-accent-300",
-  Validated: "border-emerald-400/50 text-emerald-300",
-  Completed: "border-emerald-400/50 text-emerald-300",
+  Planning: "border-amber-600/50 text-amber-700",
+  "In Progress": "border-accent-400/60 text-accent-400",
+  Validated: "border-emerald-600/50 text-emerald-700",
+  Completed: "border-emerald-600/50 text-emerald-700",
 };
 
 export function StatusBadge({ status }: { status: ProjectStatus }) {
