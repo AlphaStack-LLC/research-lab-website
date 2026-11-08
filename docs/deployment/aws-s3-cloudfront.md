@@ -4,10 +4,30 @@ Target: `https://lab.alpha-stack.ai` — a static export in a **private** S3
 bucket, served through CloudFront with Origin Access Control (OAC), HTTPS
 via ACM, and DNS managed in GoDaddy.
 
-Region note: following existing AlphaStack convention, resources are in
-`us-east-1`. ACM certificates for CloudFront **must** be in `us-east-1`.
+## Live resources (provisioned 2026-11-07)
+
+| Resource | Value |
+| --- | --- |
+| S3 bucket | `alpha-stack-lab-website` (us-east-1, public access blocked) |
+| CloudFront distribution | `E2GPSM6AHRJIS9` (`d12kfqk1jvi586.cloudfront.net`) |
+| OAC | `E1TJ1FCTZF2QJC` (`lab-website-oac`) |
+| CloudFront Function | `lab-url-rewrite` (viewer-request, cloudfront-js-2.0) |
+| ACM certificate | `29e9b570-934a-4716-9e53-2da91b59afce` (shared `*.alpha-stack.ai`, us-east-1) |
+| DNS | CNAME `lab` → `d12kfqk1jvi586.cloudfront.net` (GoDaddy, manual) |
+
+Deploy with:
+
+```bash
+npm run build && npm test
+S3_BUCKET=alpha-stack-lab-website \
+CLOUDFRONT_DISTRIBUTION_ID=E2GPSM6AHRJIS9 \
+npm run deploy
+```
 
 ## One-time setup
+
+Region note: following existing AlphaStack convention, resources are in
+`us-east-1`. ACM certificates for CloudFront **must** be in `us-east-1`.
 
 ### 1. S3 bucket (private)
 
