@@ -69,7 +69,7 @@ export default function CollaboratePage() {
               <p
                 className={
                   model.available
-                    ? "text-xs font-semibold uppercase tracking-widest text-emerald-600"
+                    ? "text-xs font-semibold uppercase tracking-widest text-emerald-300"
                     : "text-xs font-semibold uppercase tracking-widest text-paper-400"
                 }
               >

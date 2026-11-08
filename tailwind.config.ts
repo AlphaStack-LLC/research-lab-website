@@ -5,27 +5,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Light ("day") theme: ink = light surfaces, paper = dark text.
+        // Soft dark theme: ink = dark surfaces (lighter than pure black),
+        // paper = light text.
         ink: {
-          950: "#f8fafc",
-          900: "#ffffff",
-          850: "#f1f5f9",
-          800: "#e2e8f0",
-          700: "#cbd5e1",
-          600: "#94a3b8",
+          950: "#1b2434",
+          900: "#232d40",
+          850: "#2a3549",
+          800: "#31405a",
+          700: "#3d4f6e",
+          600: "#55688c",
         },
         paper: {
-          50: "#0f172a",
-          100: "#1e293b",
-          200: "#334155",
-          300: "#475569",
-          400: "#64748b",
+          50: "#f7f8fa",
+          100: "#eef1f5",
+          200: "#d9dfe8",
+          300: "#b8c2d1",
+          400: "#8b99ae",
         },
         accent: {
-          300: "#0284c7",
-          400: "#0369a1",
-          500: "#075985",
-          600: "#0c4a6e",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
         },
       },
       fontFamily: {

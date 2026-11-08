@@ -67,7 +67,7 @@ export function AgentNetwork() {
             y1={from.y}
             x2={to.x}
             y2={to.y}
-            stroke="#94a3b8"
+            stroke="#3d4f6e"
             strokeWidth="1.5"
             className="agent-edge"
           />
@@ -80,8 +80,8 @@ export function AgentNetwork() {
             cx={node.x}
             cy={node.y}
             r="16"
-            fill="#ffffff"
-            stroke={node.recovering ? "#0369a1" : "#0284c7"}
+            fill="#232d40"
+            stroke={node.recovering ? "#38bdf8" : "#0ea5e9"}
             strokeWidth="2"
             className={
               node.recovering ? "agent-node--recovering" : "agent-node"
@@ -92,7 +92,7 @@ export function AgentNetwork() {
                 : { animationDelay: `${index * 0.6}s` }
             }
           />
-          <circle cx={node.x} cy={node.y} r="5" fill="#0284c7" />
+          <circle cx={node.x} cy={node.y} r="5" fill="#38bdf8" />
         </g>
       ))}
     </svg>
