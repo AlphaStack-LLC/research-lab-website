@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-paper-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-500/30 text-paper-50;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-400 ring-offset-2 ring-offset-ink-950;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---- Agent network hero visualization ---- */
+
+@keyframes agent-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes agent-message {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes agent-recover {
+  0%,
+  55% {
+    opacity: 0.25;
+  }
+  70%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.agent-node {
+  animation: agent-pulse 4s ease-in-out infinite;
+}
+
+.agent-edge {
+  stroke-dasharray: 4 8;
+  animation: agent-message 1.6s linear infinite;
+}
+
+.agent-node--recovering {
+  animation: agent-recover 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agent-node,
+  .agent-edge,
+  .agent-node--recovering {
+    animation: none;
+  }
+  .agent-node--recovering {
+    opacity: 1;
+  }
+}
