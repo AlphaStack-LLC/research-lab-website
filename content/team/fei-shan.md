@@ -69,8 +69,15 @@ Technology, 2002–2006.
 
 Two decades of building and operating distributed platforms — from
 service-oriented architecture and concurrent systems to cloud-native
-microservices and LLM-based applications — led to a consistent observation:
-the hardest problems in production AI are not model quality, but state,
-coordination, failure handling, and verifiability across distributed agents.
-The Lab's four research areas formalize that observation into an
-investigable research program.
+microservices, machine learning, and data-driven projects — led to a
+consistent observation: the hardest problems in production AI are not model
+quality, but state, coordination, failure handling, and verifiability across
+distributed agents.
+
+That earlier industry experience and study now apply directly to research on
+frontier multi-agent AI architectures: cross-session agent communication and
+memory, fault-tolerant coordination among fleets of agents, and verifiable
+execution — including research proposals drawing on blockchain and
+decentralized technologies, where tamper-evident records and trustless
+coordination are native concerns. The Lab's four research areas formalize
+this trajectory into an investigable research program.
